@@ -1,4 +1,3 @@
-import speech_recognition as sr
 import rospy
 from  geometry_msgs.msg import Twist
 
@@ -17,7 +16,6 @@ movement.angular.z = 0.0
 
 f = open("/home/burak/PycharmProjects/sesDeneme/sesKomutu.txt", "r")
 
-r = sr.Recognizer()
 while not rospy.is_shutdown():
     text = f.read()
     if text == "come":
